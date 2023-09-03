@@ -512,4 +512,11 @@ nav ul li {
     height: auto;
   }
 
+  .responsiveh{
+    max-width: 100%;
+    height: 55vh;
+  }
 
+.paddingtop{
+  padding-top: 220px;
+}
