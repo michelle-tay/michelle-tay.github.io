@@ -18,7 +18,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color:#e5bbbb /*#FFF7F3*/;
+    background-color:#DBD3EC/*#e5bbbb /*#FFF7F3*/;
     color: #2c2c2c;
     padding-bottom: 7px;
     padding-top: 7px;
@@ -54,7 +54,7 @@ nav ul li {
 }
 
 .leftmarginedd{
-  margin-left: 220px;
+  margin-left: 225px;
 }
 
 .hometext{
@@ -68,11 +68,13 @@ nav ul li {
 .aboutmebutton {
     display: inline-block;
     border-radius: 30px;
-    background-color: #718F94;
+    background-color: #8f8acf;
     border: none;
     color: #FFFFFF;
     text-align: center;
     font-size: 1em;
+
+    
     padding: 20px;
     width: 10vw;
     transition: all 0.5s;
@@ -182,11 +184,11 @@ nav ul li {
 
   /*BLOCK*/
 .aboutblock{
-    background-color: #718f94 ;
+    background-color:  #8f8acf;
     display: flex; /* Use flexbox to create a two-column layout */
     justify-content: space-between; /* Space between the two columns */
     padding: 40px;
-    padding-bottom: 150px;
+    padding-bottom: 20px;
 }
 
 .skillsblock{
@@ -197,7 +199,7 @@ nav ul li {
   }
 
 .workblock{
-    background-color: #2c2c2c ;
+    background-color: #B5A9DC;
     
     justify-content: space-between; /* Space between the two columns */
     padding: 20px; /* Add padding to the container */
@@ -205,7 +207,7 @@ nav ul li {
 }
 
 .contactblock{
-    background-color:  #BD6B73;
+    background-color:  #675381/*#BD6B73*/;
    /* display: flex; /* Use flexbox to create a two-column layout */
     /*justify-content: space-between; /* Space between the two columns */
     padding: 20px; /* Add padding to the container */
@@ -213,7 +215,7 @@ nav ul li {
 }
 
 .footerblock{
-    background-color:#e5bbbb;
+    background-color:#dbd3ec;
     text-align: center;
     padding: 20px; /* Add padding to the container */
 }
@@ -237,7 +239,7 @@ nav ul li {
 }
 
 
-  /*COLOURS*/
+  /*COLORS*/
 
 .oldrose{
     color: #BD6B73;
@@ -258,6 +260,22 @@ nav ul li {
 
 .slategray{
     color: #718f94 ;
+}
+
+.lavenderweb{
+  color:#DBD3EC
+}
+
+.wisteria{
+  color:#b5a9dc
+}
+
+.tropicalindigo{
+  color:#8f8acf
+}
+
+.ultraviolet{
+  color:#675381
 }
 
 /*ONLINE RESOURCE FOR FLEX 2X4*/
@@ -520,3 +538,4 @@ nav ul li {
 .paddingtop{
   padding-top: 220px;
 }
+
