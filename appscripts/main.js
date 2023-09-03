@@ -3,5 +3,5 @@ function jumptoabout(){
 }
 
 function windowprompt(){ 
-    alert("Thank you for visting my portfolio! \n Do note that this site will still be going through changes! (ꈍᴗꈍ) \n\n  -Michelle");
+    alert("Thank you for visting my portfolio! \nDo note that this site will still be going through changes! (ꈍᴗꈍ) \n\n-Michelle");
   }
