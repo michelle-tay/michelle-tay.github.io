@@ -194,7 +194,7 @@ nav ul li {
 .skillsblock{
     background-color: #FFF7F3 ;
     justify-content: space-between; /* Space between the two columns */
-    padding: 20px; /* Add padding to the container */
+    padding: 25px; /* Add padding to the container */
 
   }
 
@@ -207,12 +207,24 @@ nav ul li {
 }
 
 .contactblock{
-    background-color:  #675381/*#BD6B73*/;
+    background-color:  #ab98c4/*#BD6B73*/;
    /* display: flex; /* Use flexbox to create a two-column layout */
     /*justify-content: space-between; /* Space between the two columns */
     padding: 20px; /* Add padding to the container */
     padding-bottom: 260px;
 }
+
+.achievementblock{
+  background-color:  #ffffff/*#BD6B73*/;
+  /* display: flex; /* Use flexbox to create a two-column layout */
+   /*justify-content: space-between; /* Space between the two columns */
+   padding-top: 20px; /* Add padding to the container */
+   padding-bottom: 260px;
+   padding-left: 20px;
+}
+
+
+
 
 .footerblock{
     background-color:#dbd3ec;
@@ -339,6 +351,17 @@ nav ul li {
     font-size:1.5vw;
 }
 
+.regulartextt{
+  padding-top: 10px;
+  font-size:1.2vw;
+}
+
+
+.regulartextnopadding{
+  font-size:1.5vw;
+}
+
+
 .justbottompadding{
     padding-bottom:120px;
 }
@@ -355,6 +378,10 @@ nav ul li {
 
 .skilltitle{
   font-size:2vw;
+}
+
+.achievementitle{
+  color: #B5A9DC
 }
 
 .largertopmargin{
@@ -376,6 +403,23 @@ nav ul li {
     padding-right: 55px;
     padding-top: 80px;
   }
+
+
+a  {
+  text-decoration: none;
+  font-weight: 700;
+  color: #63608f;
+
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a:hover {
+  background-color: #8f8acf;
+  padding: 2px 0;
+  color: #ffffff;
+}
+
 
 
 /*work section with effects*/
@@ -537,5 +581,44 @@ nav ul li {
 
 .paddingtop{
   padding-top: 220px;
+}
+
+/*MUSIC PLAYER*/
+#musicButton{
+  position: fixed;
+  bottom: 2.0%;
+  right: 1.0%;
+  background-color: #c4c0ff;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  border: none;
+  color: #2c2c2c;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  box-shadow: 0 9px #361601;
+  border: 1px;
+}
+
+
+
+#musicButton:hover {
+  background-color: #8f8acf;
+  color: #ffffff;
+}
+
+#musicButton:active {
+  background-image: url('../resources/milkyway.jpg');
+  box-shadow: 0 5px #361601;
+  transform: translateY(4px);
 }
 
