@@ -31,11 +31,12 @@
             <div class="onethirdflex">
                 <img class="responsive" src="resources/headerpic.png" height="900" width="750">
             </div>
-           
-
         </section>
 
-
+        <div id="audioid">
+          <audio id="myAudio" src="resources/supershymindaremix.mp3" preload="auto" hidden></audio>
+          <button id="musicButton" class="showsong" onClick="togglePlay()" title="Song: NewJeans - Super Shy (Minda Remix)"> 🎵 <br> <b>Click to play music!</b><br>hover to view song title<br>🎵</button></div>
+        </div>
 
       <!--  <section class="leftmargined">
             <img src="resources/linkedin.png" width="3%" height="3%">&nbsp&nbsp&nbsp&nbsp&nbsp
@@ -52,7 +53,7 @@
 
             <div class="rightcolumn rightmargined justbottompadding">
                 <h1 class="seashell justfloatright abouttitle"><b>ABOUT</b></h1><br><br><br><br>
-                <p class="regulartext paddingtop seashell responsiveh">I'm an Undergraduate in the <br><span class="jet"><b>National University of Singapore</b></span> (NUS),<br><br> Pursuing a bachelor in Social Sciences (Hons), <br>I am <span class="jet"><b>majoring in Communications & New Media,
+                <p class="regulartext paddingtop seashell responsiveh">I'm an Undergraduate in the National University of Singapore (NUS),<br><br> Pursuing a bachelor in Social Sciences (Hons), <br>I am <span class="jet"><b>majoring in Communications & New Media,
                 </b></span><br> and <span class="jet"><b>minoring in Interactive Media Development.</b></span>
                 <br><br> Doing <span class="jet"><b>meaningful work</b></span> is also important to me and <br>I love to <span class = "jet"><b>Research, Design and Write.</b></span></p><br> 
             </div>
@@ -237,17 +238,58 @@
       </div>
       </section>
 
-<!--CONTACT-->
 
-        <section class="contactblock">
-            <h1 id="contact" class=" contacttitle seashell topmargin leftmargined responsive"><b>DROP ME A LINE | CONNECT WITH ME</b></h1> 
-            <div class="regulartext leftmargined">
-            <p>📧 Email: <a href="mailto:michelle.tay@u.nus.edu" target="_blank">michelle.tay@u.nus.edu</a> | <a href="mailto:michelletay1810@gmail.com" target="_blank">michelletay1810@gmail.com</a>
-            <p>👋 Connect with me on <a href="https://www.linkedin.com/in/michelle-tay-ct/" target="_blank">LinkedIn</a>
-            <p>🎵 Visit my <a href="https://www.youtube.com/@michelletay4097" target="_blank">Youtube Channel</a> </p>
-            <p>📖 Read my <a href="https://medium.com/@michelletay1810" target="_blank">articles on Medium</a> about tech, student and life tips if you haven't!</p></div>
-            
-        </section>
+<!--ACHIEVEMENTS-->
+        <section id="achievements" class="achievementblock">
+          <h1  class="achievementitle seashell topmargin leftmargined responsive"><b>ACHIEVEMENTS</b></h1> 
+          <div class="leftmargined">
+
+          <p class="regulartext">🏆 <a href="https://drive.google.com/file/d/1PGp_rXEaO_zKdpHVjJkr79rNnEit8aEW/view?usp=sharing">National Youth Achieve (NYAA) Gold Award</a><p>  
+          <p class="regulartextt"> I had completed 
+            <br> 🤝 >60 hours of regular community service spread over a minimum period of 12 months. 
+            <br> 🌱 >36 hours of outdoor activities with specific learning goals,
+            <br> 🏸 > 48 hours of regular exercise over a period of 18 months and lastly, 
+            <br> 💡 the execution of a self-initiated community project via a 6 months attachment at a community centre.</p>
+
+          <p class="regulartext">👩‍🏫 BP International Mentoring & Tutoring Bronze Award<p>  
+          <p class="regulartextt">I was the president of this mentoring club and I tutored primary schools students at community centres and primary schools over two years. <br>I faciliated tutoring sessions and taught at <a href="https://drive.google.com/file/d/1lyAytBbY5RtWJI6xAtqzh7WPhorU2ec3/view?usp=sharing">Morning Star Community Centre</a> and <a href="https://drive.google.com/file/d/1Vf5FgS6Is-R01C6nRNHONCHZCmi2ghVZ/view?usp=sharing">Tampines North Primary School.</a></p>
+
+          <p class="regulartext">👩‍🏫 Temasek Polytechnic - <a href="https://drive.google.com/file/d/1Zb2M5j9TxYxxqxRSpDqfztGCSmmuk0T-/view?usp=sharing">Year Project Commendation Award</a><p>  
+          <p class="regulartextt">Led a team on a deep learning project and attained a distinction and commendation award</p>
+
+
+          <p class="regulartext"><b>MORE</b></p>
+
+
+          <p class="regulartextt" >📜 Read all my <a href="https://drive.google.com/drive/folders/14eviBpswvay11mm-jHkC-5dP-yTx0gmv?usp=sharing" target="_blank">testimonials</a> from my teachers, colleagues and managers.</p>
+       
+          <p class="regulartextt" >📑 View my <a href="https://drive.google.com/file/d/1chXvp0Nml8BlHXQe4GAG4kqCDf7rqz2g/view?usp=sharing" target="_blank">Diploma academic transcript</a> and my <a href="https://drive.google.com/file/d/1Sb6J-up1U7B3gzHXJmk7L7136zxKW9iI/view?usp=sharing">CCA Transcript</a></p>
+
+        </div>
+
+
+          
+      </section>
+
+
+    <!--CONTACT-->
+
+    <section class="contactblock">
+      <h1 id="contact" class=" contacttitle seashell topmargin leftmargined responsive"><b>DROP ME A LINE | CONNECT WITH ME</b></h1> 
+      <div class="regulartext leftmargined">
+      <p>📧 Email: <a href="mailto:michelle.tay@u.nus.edu" target="_blank">michelle.tay@u.nus.edu</a> | <a href="mailto:michelletay1810@gmail.com" target="_blank">michelletay1810@gmail.com</a>
+      <p>👋 Connect with me on <a href="https://www.linkedin.com/in/michelle-tay-ct/" target="_blank">LinkedIn</a>
+      <p>🎵 Visit my <a href="https://www.youtube.com/@michelletay4097" target="_blank">Youtube Channel</a> </p>
+      <p>📖 Read my <a href="https://medium.com/@michelletay1810" target="_blank">articles on Medium</a> about tech, student and life tips if you haven't!</p></div>
+      
+  </section>
+
+
+
+
+
+
+
 <!--FOOTER-->
         <section class="footerblock">
             <p >Thank you for visiting this portfolio website.<br>Created and Designed with 💜 by Michelle Tay</p> 
@@ -257,14 +299,15 @@
     </main>
 
     <header>
-      <p class="leftmarginedd savoryblue"><b>MICHELLE TAY</b></p>
+      <p class="leftmarginedd"><b>MICHELLE TAY</b></p>
       <nav>
           <ul>
-              <li><a href="#home">HOME</a></li>
-              <li><a href="#aboutme">ABOUT</a></li>
-              <li><a href="#skills">SKILLS</a></li>
-              <li><a href="#work">WORK</a></li>
-              <li><a href="#contact">CONTACT</a></li>
+              <li class="navtexts"><a href="#home">HOME</a></li>
+              <li class="navtexts"><a href="#aboutme">ABOUT</a></li>
+              <li class="navtexts"><a href="#skills">SKILLS</a></li>
+              <li class="navtexts"><a href="#work">WORK</a></li>
+              <li class="navtexts"><a href="#contact">CONTACT</a></li>
+              <li class="navtexts"><a href="#achievements">ACHIEVEMENTS</a></li>
           </ul>
       </nav>
   </header>
