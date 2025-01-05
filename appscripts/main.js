@@ -1,36 +1,47 @@
-function jumptoabout(){
-    document.getElementById("aboutme").scrollIntoView();
-}
+/*window.onload = () => {
+    alert("Thank you for visiting my website! Take your time exploring my work, and don’t forget to enjoy the latest music I've been vibing to, just hit play music at the bottom right! \n\n -Michelle");
+};*/
 
-function windowprompt(){ 
-    alert("Thank you for visting my portfolio! \nDo note that this site will still be going through changes! (ꈍᴗꈍ) \n\n-Michelle");
+document.addEventListener("DOMContentLoaded", () => {
+    const music = document.getElementById("music");
+    const playPauseBtn = document.getElementById("play-pause-btn");
+  
+    playPauseBtn.addEventListener("click", () => {
+      if (music.paused) {
+        music.play();
+        playPauseBtn.textContent = "⏸️ Pause Music"; // Emoji for Pause
+      } else {
+        music.pause();
+        playPauseBtn.textContent = "▶️ Play Music"; // Emoji for Play
+      }
+    });
+  });
+
+  function adjustSpacing() {
+    const breadcrumb = document.querySelector(".breadcrumb");
+    const header = document.querySelector("header");
+    const firstSection = document.querySelector("section");
+  
+    const headerHeight = header.offsetHeight;
+    const breadcrumbHeight = breadcrumb.offsetHeight;
+  
+    // Set padding dynamically
+    firstSection.style.paddingTop = `${headerHeight + breadcrumbHeight + 20}px`;
   }
 
-  // to execute function upon opening loading the page
-  window.addEventListener('load', function(){
-    // get the element id of myAudio
-    let myAudio = document.getElementById("myAudio");
-    
-    //set isplaying to true on play
-    myAudio.onplaying = function() {
-      isPlaying = true;
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const musicPlayer = document.querySelector(".music-player");
+  
+    const hideMusicPlayerOnMobile = () => {
+      if (window.innerWidth <= 768) {
+        musicPlayer.style.display = "none";
+      } else {
+        musicPlayer.style.display = "flex"; // Ensure it shows on larger screens
+      }
     };
-
-    //set isplaying to false on pause 
-    myAudio.onpause = function() {
-      isPlaying = false;
-    };
-});
-
-
-  //let is playing to be set to false at first so music doesnt play first unless button is pressed.
-let isPlaying = false;
-
-// declare function to toggle between play and pause
-function togglePlay() {
-    if (isPlaying) {
-        myAudio.pause()
-    } else {
-        myAudio.play();
-    }}
-
+  
+    // Run on load and resize
+    hideMusicPlayerOnMobile();
+    window.addEventListener("resize", hideMusicPlayerOnMobile);
+  });
