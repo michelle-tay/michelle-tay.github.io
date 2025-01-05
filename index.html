@@ -1,317 +1,911 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+      <title>Michelle's Portfolio</title>
+      <meta name="description" content="Michelle's Personal Website">
+  
+      <!-- Recommended minimum -->
+      <meta property="og:title" content="Michelle's Page">
+      <meta property="og:description" content="Michelle's personal website.">
+      <script defer type="text/javascript" src="appscripts/main.js"></script>
+  
+      <!-- You could also inline the stylesheet -->
+      <link rel="stylesheet" href="css/appstyle.css">
+      <link rel="icon" type="image/png" href="res/Logos/Logo.svg">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michelle Tay's Portfolio 🐱</title>
-    <link rel="stylesheet" href="css/appstyle.css">
-    <link rel="icon" href="resources/heart.png">
-    <script defer type="text/javascript" src="appscripts/main.js"></script>
-</head>
+      <!-- Get the font name is written "Like+This" -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM Plex Sans Condensed">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM Plex Mono">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM Plex Serif"> 
+      <link rel="icon" type="image/png" href="resources/BrandLogo.png">
+    </head>
 
-<body onload="windowprompt()">
+
+  <body>
     
     <main>
-        <section  class=" flex fade-in-text">
-            <div class="twothirdflex">
-                <p id="home" class="leftmargined hometext">Hello World 👋 <br>I'm Michelle! <br> And I am an aspiring <br> <span class="tropicalindigo"><b>UI/UX Designer.</b></span></p> 
-            <div class="leftmargined">
 
-                <a href="https://www.linkedin.com/in/michelle-tay-ct/" target="_blank">
-                <img class="socialicons" src="resources/linkedin.png"></a> &nbsp&nbsp&nbsp&nbsp&nbsp
-                <a href="mailto:michelle.tay@u.nus.edu" target="_blank">
-                <img class="socialicons" src="resources/email.png"></a> &nbsp&nbsp&nbsp&nbsp&nbsp
-                <a href="https://medium.com/@michelletay1810" target="_blank">
-                <img class="socialicons" src="resources/medium.png">   </a>
-            </div> 
-            <br><br>
-                <button class="btnresponsive aboutmebutton" style="vertical-align:middle" onClick=jumptoabout()><span>ABOUT ME</span></button>
-                </div>
-            <div class="onethirdflex">
-                <img class="responsive" src="resources/headerpic.png" height="900" width="750">
+      <div class="music-player">
+        <audio id="music" controls>
+            <source src="resources/lovemeback.mp3" data-tooltip="Playing 'Love me back' by Fromis_9" type="audio/mpeg">
+          </audio>
+          <button id="play-pause-btn" data-tooltip="Playing 'Love me back'by Fromis_9">▶️ Play Music</button>
+      </div>
+    
+      <section id="home">
+        <header>
+          <div class="brand">
+            <img src="resources/BrandLogo.png" alt="Icon" class="icon">
+            <h1 class="icontitle" style="color: #ab5fbe;">Michelle Tay</h1>
+        </div>
+          <div>
+          <nav>
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a  href="#portfolio">Portfolio</a>
+            </nav>
             </div>
-        </section>
-
-        <div id="audioid">
-          <audio id="myAudio" src="resources/supershymindaremix.mp3" preload="auto" hidden></audio> 
-          <button id="musicButton" class="showsong" onClick="togglePlay()" title="Song: NewJeans - Super Shy (Minda Remix)"> 🎵 <br> <b>Click to play <br> and pause music!</b><br>hover to view song title<br>🎵</button></div>
-        </div>
-
-      <!--  <section class="leftmargined">
-            <img src="resources/linkedin.png" width="3%" height="3%">&nbsp&nbsp&nbsp&nbsp&nbsp
-            <img src="resources/email.png" width="3%" height="3%">&nbsp&nbsp&nbsp&nbsp&nbsp
-            <img src="resources/medium.png" width="3%" height="3%">    
-        </section>-->
-
-<!--ABOUT ME-->
-        <section id="aboutme" class="aboutblock">
-            <div class="leftcolumn leftmargined">
-                <br><br><br><br><br><br><br><br><br><br>
-                <img class="responsiveh" src="resources/headshot.png" width="500" height="500">
-            </div>
-
-            <div class="rightcolumn rightmargined justbottompadding">
-                <h1 class="seashell justfloatright abouttitle"><b>ABOUT</b></h1><br><br><br><br>
-                <p class="regulartext paddingtop seashell responsiveh">I'm an Undergraduate in the National University of Singapore (NUS),<br><br> Pursuing a bachelor in Social Sciences (Hons), <br>I am <span class="jet"><b>majoring in Communications & New Media,
-                </b></span><br> and <span class="jet"><b>minoring in Interactive Media Development.</b></span>
-                <br><br> Doing <span class="jet"><b>meaningful work</b></span> is also important to me and <br>I love to <span class = "jet"><b>Research, Design and Write.</b></span></p><br> 
-            </div>
-        </section>
-<!--SKILLS-->
+        </header>
 
 
-        <section id="skills" class=" responsive skillsblock">
-            <h1 class=" skilltitle jet topmargin leftmargined"><b>SKILLS</b></h1> 
-            
-            
-                <div class='responsive some-page-wrapper'>
-                    <div class='row'>
-                      <div class='column'>
-                        <div class='orange-column'>
-                          <img class="workicon-toppadding" src="resources/speaking.png" width="30%" height="80%">
-                        </div>
-                      </div>
-                      <div class='column'>
-                        <div class='blue-column'>
-                            <img class="workicon-toppadding" src="resources/seo-search-symbol.png" width="30%" height="100%">
-                        </div>
-                      </div>
-                      <div class='column'>
-                        <div class='green-column'>
-                        <img class="workicon-toppadding" src="resources/coding.png" width="30%" height="80%">
-
-                        </div>
-                      </div>
-                      <div class='column'>
-                        <div class='green-column'>
-                        <img class="workicon-toppadding" src="resources/creativity.png" width="30%" height="70%">
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class='row 2'>
-                      <div class='column'>
-                        <div class='green-columnn'>
-                            <b>Language</b>
-                            <br><br><br>
-                            <p >English <br><br> Mandarin Chinese <br><br> Elementary Japanese</p>
-                        </div>
-                      </div>
-                      <div class='column'>
-                        <div class='orange-columnn'>
-                            <b>SEO | ANALYTICS | SOCIAL</b>
-                            <br><br><br>
-                            <p >Semrush <br><br> UberSuggest <br><br> Google Analytics <br><br> Oktopost <br><br> Social Champ <br><br> Frase.io <br><br> Jasper.ai </p>
-                        </div>
-                      </div>
-                      <div class='column'>
-                        <div class='blue-columnn'>
-                            <b>PROGRAMMING</b>
-                            <br><br><br>
-                            <p >Python <br><br> C++ <br><br> HTML <br><br> CSS <br><br> Javascript</p>
-                        </div>
-                      </div>
-                      <div class='column'>
-                        <div class='blue-columnn'>
-                            <b>CREATIVE | EDITING </b>
-                            <br><br><br>
-                             <p >Figma<br><br>Miro<br><br>Adobe Photoshop<br><br>Adobe Illustrator <br><br> Adobe XD <br><br> Procreate <br><br>Paint.net <br><br> Sony Vegas Pro</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-        </section>
-
-<!--WORK-->
-
-       <section id="work" class="workblock">
-            <h1 class="worktitle seashell topmargin justloatright"><b>WORK</b></h1>
-            <br><br><br><br><br><br><br><br><br><br><br><br>
-      <!-- ROW 1 -->
-      <div class="gallery-container">
-        <div class="gallery-item">  <a href="https://taychingtingmichelle-nm2207.github.io/" target="_blank>">
-          <img class="roundedradius" src="resources/socialmedia.jpg" alt="social media" width="100%" height="100%">
-          <div class="roundedradius image_overlay image_overlay--blur">
-          <div class="gallery-text">
-            <h2>#WebDevelopment</h2>
+        <div class="content-container">
+          <div class="text-content">
+            <h2 class="subheader">Hello World 👋</h2> 
+            <h2> I'm Michelle, and I am interested in <strong style="color:#c05c85">UIUX Design & Product Management.</strong></h2>
+            <p>I’m a 3rd-year undergraduate at the National University of Singapore, <br>pursuing a Bachelor in Social Sciences (Honours) with a major in <br><strong style="color: #c05c85">Communications & New Media</strong>. I also hold a diploma in <strong style="color: #c05c85"> Biomedical Engineering.</strong></p>
+            <p>Doing work is important to me, and I enjoy designing intuitive digital experiences and developing <strong style="color:#c05c85">interactive media.</strong></p> 
+            <p>Feel free to take a look around at my site and projects <a href="#portfolio">here!</a></p>
           </div>
-            <p>Datastory - Extensive Research on the effects of Social Media Usage <br><br> <b>Click to read more</b></p>
-        </div>
-      </a>
-        </div>
-
-        <div class="gallery-item">
-          <img class="roundedradius" src="resources/amplifiedweb.png" alt="social media" width="100%" height="100%">
-          <div class="roundedradius image_overlay image_overlay--blur">
-          <div class="gallery-text">
-            <h2>#WebDevelopment (Design)</h2>
-          </div>
-            <p>A CCA project - to revamp my CCA's existing website (In-progress)</p>
-        </div>
-        </div>
-      </div>
-
-       <!-- ROW 2 -->
-       <div class="gallery-container">
-        <div class="gallery-item">
-          <img class="roundedradius" src="resources/smmanagement.jpg" alt="social media" width="100%" height="100%">
-          <div class="roundedradius image_overlay image_overlay--blur">
-          <div class="gallery-text">
-            <h2>#Social Media Management | #Marketing & Communications</h2>
-          </div>
-            <p>I can help you to devise social media strategy, <br>  do market research  and grow your social platform.  <br><br> Past Experience: Grew Randstad Asia's Tiktok <br>to >1000 followers in 4 months</p>
-        </div>
-        </div>
-
-        <div class="gallery-item"> <a href="https://medium.com/@michelletay1810" target="_blank>">
-          <img class="roundedradius" src="resources/blog.jpg" alt="social media" width="100%" height="100%">
-          <div class="roundedradius image_overlay image_overlay--blur">
-          <div class="gallery-text">
-            <h2>#Writing</h2>
-          </div>
-          <p>I've wrriten a couple of articles, touching on <br>advice, tips, tech and student-oriented content<br><br> <b>Click to read more</b></p>
-        </div>
-      </a>
-        </div>
-
-      </div>
-
-
-      <!-- ROW 3 -->
-
-     <!--- <div class="gallery-container">
-        <div class="gallery-item">
-          <img class="roundedradius" src="resources/socialmedia.jpg" alt="social media" width="100%" height="100%">
-          <div class="roundedradius image_overlay image_overlay--blur">
-          <div class="gallery-text">
-            <h2>Over 1 billion Stories are posted every day across Facebook apps as of January 2023</h2>
-          </div>
-          <br><br><br><br><br><br><br>
-          <p>Source: <a href="https://www.cloudwards.net/countries-where-whatsapp-is-banned/#:~:text=Only%20five%20countries%20in%20the,to%20promote%20local%20telecommunication%20companies.">Hootsuite</a></p>
-        </div>
-        </div>
-
-        <div class="gallery-item">
-          <img class="roundedradius" src="resources/socialmedia.jpg" alt="social media" width="100%" height="100%">
-          <div class="roundedradius image_overlay image_overlay--blur">
-          <div class="gallery-text">
-            <h2>Over 1 billion Stories are posted every day across Facebook apps as of January 2023</h2>
-          </div>
-          <br><br><br><br><br>
-          <p>Source: <a href="https://thesocialshepherd.com/blog/snapchat-statistics">The Social Shepherd</a></p>
-        </div>
-        </div>
-        <div class="gallery-item">
-          <img class="roundedradius" src="resources/socialmedia.jpg" alt="social media" width="100%" height="100%">
-          <div class="roundedradius image_overlay image_overlay--blur">
-          <div class="gallery-text">
-            <h2>Over 1 billion Stories are posted every day across Facebook apps as of January 2023</h2>
-          </div>
-          <br><br><br><br><br>
-          <p>Source: <a href="https://www.searchenginejournal.com/pinterest-facts/370926/">Search Engine Journal</a></p>
-        </div>
-      </div>
-    </div> -->
-  
-      <!-- ROW 3 -->
-      <div class="gallery-container">
-        <div class="gallery-itemm">
-          <img class="roundedradius" src="resources/photoshop.jpg" alt="social media" width="100%" height="100%">
-          <div class="roundedradius image_overlayy image_overlayy--blur">
-          <div class="gallery-text">
-            <h2>#AbobePhotoshop</h2>
-          </div>
-          <p>This art piece was created during a photoshop competition <br> which I manage to clutch 2nd Place.</p>
-        </div>
-        </div>
-
-        <div class="gallery-itemm"> <a href="https://drive.google.com/drive/folders/1QKeFXZzeHHuz0UVMDAdzHjzBGYBWJQUW?usp=drive_link" target="_blank">
-          <img class="roundedradius" src="resources/Draw.jpg" alt="social media" width="100%" height="100%">
-          <div class="roundedradius image_overlayy image_overlayy--blur">
-          <div class="gallery-text">
-            <h2>#Drawing | #Art</h2>
-          </div>
-          <p>In the past, I did a couple of manga/comic sketches, <br><br> <b>you may find more art pieces here</b></p>
-        </div>
-        </div></a>
-      </div>
-      </section>
-
-
-<!--ACHIEVEMENTS-->
-        <section id="achievements" class="achievementblock">
-          <h1  class="achievementitle seashell topmargin leftmargined responsive"><b>ACHIEVEMENTS</b></h1> 
-          <div class="leftmargined">
-
-          <p class="regulartext">🏆 <a href="https://drive.google.com/file/d/1PGp_rXEaO_zKdpHVjJkr79rNnEit8aEW/view?usp=sharing">National Youth Achieve (NYAA) Gold Award</a><p>  
-          <p class="regulartextt"> I had completed 
-            <br> 🤝 >60 hours of regular community service spread over a minimum period of 12 months. 
-            <br> 🌱 >36 hours of outdoor activities with specific learning goals,
-            <br> 🏸 > 48 hours of regular exercise over a period of 18 months and lastly, 
-            <br> 💡 the execution of a self-initiated community project via a 6 months attachment at a community centre.</p>
-
-          <p class="regulartext">👩‍🏫 BP International Mentoring & Tutoring Bronze Award<p>  
-          <p class="regulartextt">I was the president of this mentoring club and I tutored primary schools students at community centres and primary schools over two years. <br>I faciliated tutoring sessions and taught at <a href="https://drive.google.com/file/d/1lyAytBbY5RtWJI6xAtqzh7WPhorU2ec3/view?usp=sharing">Morning Star Community Centre</a> and <a href="https://drive.google.com/file/d/1Vf5FgS6Is-R01C6nRNHONCHZCmi2ghVZ/view?usp=sharing">Tampines North Primary School.</a></p>
-
-          <p class="regulartext">👩‍🏫 Temasek Polytechnic - <a href="https://drive.google.com/file/d/1Zb2M5j9TxYxxqxRSpDqfztGCSmmuk0T-/view?usp=sharing">Year Project Commendation Award</a><p>  
-          <p class="regulartextt">Led a team on a deep learning project and attained a distinction and commendation award</p>
-
-
-          <p class="regulartext"><b>MORE</b></p>
-
-
-          <p class="regulartextt" >📜 Read all my <a href="https://drive.google.com/drive/folders/14eviBpswvay11mm-jHkC-5dP-yTx0gmv?usp=sharing" target="_blank">testimonials</a> from my teachers, colleagues and managers.</p>
-       
-          <p class="regulartextt" >📑 View my <a href="https://drive.google.com/file/d/1chXvp0Nml8BlHXQe4GAG4kqCDf7rqz2g/view?usp=sharing" target="_blank">Diploma academic transcript</a> and my <a href="https://drive.google.com/file/d/1Sb6J-up1U7B3gzHXJmk7L7136zxKW9iI/view?usp=sharing">CCA Transcript</a></p>
-
-        </div>
-
-
-          
-      </section>
-
-
-    <!--CONTACT-->
-
-    <section class="contactblock">
-      <h1 id="contact" class=" contacttitle seashell topmargin leftmargined responsive"><b>DROP ME A LINE | CONNECT WITH ME</b></h1> 
-      <div class="regulartext leftmargined">
-      <p>📧 Email: <a href="mailto:michelle.tay@u.nus.edu" target="_blank">michelle.tay@u.nus.edu</a> | <a href="mailto:michelletay1810@gmail.com" target="_blank">michelletay1810@gmail.com</a>
-      <p>👋 Connect with me on <a href="https://www.linkedin.com/in/michelle-tay-ct/" target="_blank">LinkedIn</a>
-      <p>🎵 Visit my <a href="https://www.youtube.com/@michelletay4097" target="_blank">Youtube Channel</a> </p>
-      <p>📖 Read my <a href="https://medium.com/@michelletay1810" target="_blank">articles on Medium</a> about tech, student and life tips if you haven't!</p></div>
       
-  </section>
+          <figure class="headshot">
+            <img alt="Headshot" src="resources/headshot.png" width="200">
+          </figure>
+        </div>
+      
+        <hr>
+      
+        <p>
+
+        <h1 class="subheader">Contact</h1>
+          <a target="_blank" href="https://www.linkedin.com/in/michelle-tay-ct/">LinkedIn</a>&nbsp;&nbsp;&nbsp; 
+          <a target="_blank" href="https://github.com/michelle-tay">GitHub</a>&nbsp;&nbsp;&nbsp; 
+          <a target="_blank" href="https://www.youtube.com/@michelletay4097">YouTube</a>&nbsp;&nbsp;&nbsp; 
+          <a target="_blank" href="https://medium.com/@michelletay1810">Medium</a>
+        </p>
+        Email:
+        <a href="mailto:michelletay1810@gmail.com">michelletay1810@gmail.com</a> | 
+        <a href="mailto:michelle.tay@u.nus.edu">michelle.tay@u.nus.edu</a>
+      
+        <br>
+        <small>Page last updated 2/12/2025</small>
+        
+      </section>
+
+      <section id="about">
+
+        <header>
+          <div class="brand">
+            <img src="resources/BrandLogo.png" alt="Icon" class="icon">
+            <h1 class="icontitle" style="color: #ab5fbe;">Michelle Tay</h1>
+        </div>
+          <div>
+          <nav>
+            <a href="#home">Home</a>
+            <a class="active" href="#about">About</a>
+            <a  href="#portfolio">Portfolio</a>
+            </nav>
+            </div>
+        </header>
+
+        <p class="breadcrumb">
+          <a href="#about" class="active">About</a>&nbsp;&nbsp; ❀
+          &nbsp;&nbsp;<a href="#testimonials">Testimonials</a>&nbsp;&nbsp; ❀
+          &nbsp;&nbsp;<a href="#hobbies">Hobbies</a>
+        </p>
+      
+        <br>
+        <h1 class="subheader">Education</h1> 
+        <b class="standout">National University of Singapore</b>
+        <small>[2022 – expected Nov 2025]</small>
+        <p>
+          Bachelor of Social Sciences (Honours) in Communications and New Media<br>
+          <!-- <small>Current GPA: 4.32/5.00</small> -->
+        </p>
+
+        <br>
+        <b class="standout">Temasek Polytechnic</b>
+        <small>[2018 – 2021]</small>
+        <p>Diploma in Biomedical Engineering (with Merit)<br>
+          <small>GPA: 3.94/4.00</small>
+        </p>
+        
+        <hr>
+        <h1 class="subheader">Skills</h1>
+        <h3 class="standout">UIUX Research/Projects, Communicative Design, Writing, Marketing, Data Analysis</h3>
+        <ul>
+         <li><b>Programming:</b> Javascript, Python, C/C++</li>
+         <li><b>Other:</b> HTML, CSS</li>
+         <li><b>Design:</b> Adobe Photoshop, InDesign, Illustrator, Adobe XD, Figma, Miro, ProCreate</li>
+         <li><b>Video:</b> Sony Vegas Pro, Capcut</li>
+         <li><b>Marketing & SEO:</b> Semrush, UberSuggest, Jasper.ai,  Oktopost</li>
+         <li><b>Data:</b> Google Analytics 4, Excel, Tableau, Radiant</li>
+        <li><b>Languages:</b> English, Mandarin Chinese, Elementary Japanese <a target="_blank" href="https://credentials.nus.edu.sg/aa9b0f22-0a10-4c8a-a530-1a4e9f66d0bb">(View my certification here)</a></li>
+      </ul>
+      <hr>
+
+      </section>
+
+      <section id="testimonials">
+
+        <header>
+          <div class="brand">
+            <img src="resources/BrandLogo.png" alt="Icon" class="icon">
+            <h1 class="icontitle" style="color: #ab5fbe;">Michelle Tay</h1>
+        </div>
+          <div>
+          <nav>
+            <a href="#home">Home</a>
+            <a class="active" href="#about">About</a>
+            <a  href="#portfolio">Portfolio</a>
+            </nav>
+            </div>
+        </header>
+
+        <p class="breadcrumb">
+          <a href="#about" >Back to About</a>&nbsp;&nbsp; ❀
+          &nbsp;&nbsp;<a href="#testimonials" class="active">Testimonials</a>&nbsp;&nbsp; ❀
+          &nbsp;&nbsp;<a href="#hobbies">Hobbies</a>
+        </p><br>
+
+        <h1 class="subheader">Testimonials</h1>
+
+        <div class="case-study-container">
+          <!-- Testimonial 1 -->
+          <div class="case-study">
+            <img src="resources/bsc.webp" alt="testimonial-1" />
+            <p>Digital Marketing Intership</p><br>
+            <span class="year">Written by direct manager | 2024</span>
+            <p><a target="_blank" href="https://drive.google.com/file/d/1cq6YOxe7G0sTRQhi9BTMBQxxP053gE21/view?usp=sharing">View testimonial</a></p>
+          </div>
+      
+          <!-- Testimonial 2 -->
+          <div class="case-study">
+            <img src="resources/studyramen.jpg" alt="testimonial-2" />
+            <p>Freelance Article Writer at StudyRamen</p>
+            <span class="year">Written by founder | 2022</span>
+            <p><a target="_blank" href="https://drive.google.com/file/d/1xUQcrdoSRNj6Zlvg4I2pvTIHTK9L48Ov/view?usp=sharing">View testimonial</a></p>
+          </div>
+      
+           <!-- Testimonial 3 -->
+          <div class="case-study">
+            <img src="resources/nuhs.png" alt="testimonial-3" />
+            <p>Research intern at NUS Yong Loo Lin School of Medicine</p>
+            <span class="year">Written by principal investigator | 2022</span>
+            <p><a target="_blank" href="https://drive.google.com/file/d/16y8Xrdb8Lun4Aw62vgGiygzGG0Ln5KNh/view?usp=sharing">View testimonial</a></p>
+          </div>
+          
+        </div>
+
+        <br><br>
+
+        <div class="case-study-container">
+           <!-- Testimonial 4 -->
+          <div class="case-study">
+            <img src="resources/tp.jpg" alt="testimonial-4" />
+            <p>Temasek Polytechnic CCA — Mentoring Club</p>
+            <span class="year">Written by CCA Advisor | 2020</span>
+            <p><a target="_blank" href="https://drive.google.com/file/d/1jAwfr08hOWb5OUjvAUCgB69G3wxosTD5/view?usp=sharing">View testimonial</a></p>
+          </div>
+      
+           <!-- Testimonial 5 -->
+          <div class="case-study">
+            <img src="resources/tp.jpg" alt="testimonial-5" />
+            <p>Temasek Polytechnic CCA — Student Ambassadors </p>
+            <span class="year">written by CCA Advisor | 2020</span>
+            <p><a target="_blank" href="https://drive.google.com/file/d/1hiL3k6CyfUm6xmALKQb8Rod_K7kbaij7/view?usp=sharing">View testimonial</a></p>
+          </div>
+      
+          <!-- Testimonial 6 -->
+          <div class="case-study">
+            <img src="resources/drgui.png" alt="testimonial-6" />
+            <p>Temasek Polytechnic — Final Year AI Project</p>
+            <br>
+            <p>Read more about the project <a href="#interactivemedia">here</a></p>
+            <span class="year">Written by project supervisor | 2020</span>
+            <p><a target="_blank" href="https://drive.google.com/file/d/14fpllOffFfM5S0bJIgcwudQ03G_ZJfk5/view?usp=sharing">View testimonial</a></p>
+          </div>
+          
+        </div>
+        <br>
+
+        <p><center><a href="#testimonials">Click to go Back to Top</a></center></p>
+        <hr>
+
+       
+      </section> 
+     
+
+      <section id="hobbies">
+
+        <header>
+          <div class="brand">
+            <img src="resources/BrandLogo.png" alt="Icon" class="icon">
+            <h1 class="icontitle" style="color: #ab5fbe;">Michelle Tay</h1>
+        </div>
+          <div>
+          <nav>
+            <a href="#home">Home</a>
+            <a class="active" href="#about">About</a>
+            <a  href="#portfolio">Portfolio</a>
+            </nav>
+            </div>
+        </header>
+
+      
+        <p class="breadcrumb">
+          <a href="#about" >Back to About</a>&nbsp;&nbsp; ❀
+          &nbsp;&nbsp;<a href="#testimonials" >Testimonials</a>&nbsp;&nbsp; ❀
+          &nbsp;&nbsp;<a href="#hobbies" class="active">Hobbies</a>
+        </p><br>
+ 
+<h1 class="subheader" id="singing">Singing</h1>
+<p>
+  Apart from work, I also enjoy singing and performing! <br>
+  Feel free to explore <a href="https://www.youtube.com/@michelletay4097/videos" target="_blank">my YouTube channel</a> to watch more performances.
+</p>
+<br>
+<div class="video-wrapper">
+  <iframe
+    src="https://www.youtube.com/embed/lpJHWpEBiYo?si=Eekw5F84o67XMhBx"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+
+<div class="video-wrapper">
+  <iframe
+    src="https://www.youtube.com/embed/yU4rZ_eNlfQ?si=QWccyZ9KhcfGx4kr"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+
+       <hr>
+       <h1 class="subheader" id="piano">Handcrafted creations</h1>
+       <p>I also enjoy crafting unique handmade creations. Here are a few designs I’ve crocheted and some resin jewellery pieces I’ve crafted!</p> <br>
+
+       <b class="standout">Crochet</b>
+       <div class="imagecontainer2">
+         <figure>
+           <img src="resources/earrings.jpg">
+           <figcaption><center>Mini Hanging Monstera Plant</center></figcaption>
+         </figure>
+         <figure>
+           <img src="resources/earringcat.png">
+           <figcaption><center>Bear Coaster</center></figcaption>
+         </figure>
+         <figure>
+           <img src="resources/amigurumistuffanimals.png">  
+           <figcaption><center>Amigurumi Stuff Animals</center></figcaption>
+         </figure>
+         <figure>
+          <img src="resources/pouch.JPG">  
+          <figcaption><center>Pouch</center></figcaption>
+        </figure>
+       </div>
+
+       
+      <b class="standout">Resin Jewellery</b>
+            <div class="imagecontainer2">
+              <figure>
+                <img src="resources/earrings.jpg">
+                <figcaption><center>Floral edition earring series</center></figcaption>
+              </figure>
+              <figure>
+                <img src="resources/earringcat.png">
+                <figcaption><center>Cat edition jewellery series</center></figcaption>
+              </figure>
+              <figure>
+                <img src="resources/pendant1.jpg">  
+                <figcaption><center>Floral pendant 1</center></figcaption>
+              </figure>
+              <figure>
+               <img src="resources/pendant2.jpg">  
+               <figcaption><center>Floral pendant 2</center></figcaption>
+             </figure>
+            </div>
+
+            
+      
+       <hr>
+
+       <h1 class="subheader" id="piano">Piano</h1>
+       <p>I used to play the piano too. <br>Here are some videos of my performances.</p>
+       <br>
+       <div class="video-wrapper">
+         <iframe
+           src="https://www.youtube.com/embed/1B-11yb27Pw?si=i26yhG1XhKEGf3qb"
+           title="YouTube video player"
+           frameborder="0"
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+           referrerpolicy="strict-origin-when-cross-origin"
+           allowfullscreen>
+         </iframe>
+       </div>
+       
+       <div class="video-wrapper">
+         <iframe
+           src="https://www.youtube.com/embed/c3kqqYfxTS8?si=cwGZyh2QB2dClDqc"
+           title="YouTube video player"
+           frameborder="0"
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+           referrerpolicy="strict-origin-when-cross-origin"
+           allowfullscreen>
+         </iframe>
+       </div>
+       <br>
+       
+       <p><center><a href="#hobbies">Click to go Back to Top</a></center></p>
+       <hr>
+  
+      </section>   
+
+      <section id="portfolio">
+
+        <header>
+          <div class="brand">
+            <img src="resources/BrandLogo.png" alt="Icon" class="icon">
+            <h1 class="icontitle" style="color: #ab5fbe;">Michelle Tay</h1>
+        </div>
+          <div>
+          <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a class="active" href="#portfolio">Portfolio</a>
+            </nav>
+            </div>
+        </header>
+
+   
+
+        <br>
+      
+        <h1 class="subheader">My Portfolio</h1>
+
+        
+
+            <div class="cta-grid">
+              <a href="#uxportfolio"><div class="cta-box uiux">
+                <img src="resources/uiuxthumbnail.png" alt="UI/UX">
+                <div class="cta-title">UI/UX</div>
+                <div class="cta-hover">
+                  <p><span style="color:#ff9dce">Case Studies</span><br><br> Designing intuitive <br>and user-friendly digital experiences.</p>
+                </div>
+              </div></a>
+              <a href="#interactivemedia"><div class="cta-box interactive-media">
+                <img src="resources/interactivemediathumbnail.png" alt="Interactive Media">
+                <div class="cta-title">Interactive Media</div>
+                <div class="cta-hover">
+                  <p><span style="color:#ff9dce">Game Design, Interactive Data Stories, <br>& Innovative Applications. </span><br><br> Blending creativity with technical expertise <br> to craft meaningful interactions.</p>
+                </div>
+              </div></a>
+              <a href="#visualdesign"><div class="cta-box visual-design">
+                <img src="resources/universeinfographicfinal.png" alt="Visual Design">
+                <div class="cta-title">Visual Design</div>
+                <div class="cta-hover">
+                  <p><span style="color:#ff9dce">Brand Style Guides, Infographics, Posters, <br>and Digital Illustrations</span> <br><br>Creation of compelling visuals <br>to communicate ideas effectively.</p>
+                </div>
+              </div></a>
+              <a href="#writing"><div class="cta-box writing">
+                <img src="resources/writingthumbnail.png" alt="Writing">
+                <div class="cta-title">Writing</div>
+                <div class="cta-hover">
+                  <p><span style="color:#ff9dce">E-book, Blog Articles, Marketing Collateral </span><br><br>Crafting impactful content that <br>resonates with specific audiences.</p>
+                </div>
+              </div></a>
+            </div>
+
+      </section>
+
+      <section id="uxportfolio">
+
+        <header>
+          <div class="brand">
+            <img src="resources/BrandLogo.png" alt="Icon" class="icon">
+            <h1 class="icontitle" style="color: #ab5fbe;">Michelle Tay</h1>
+        </div>
+          <div>
+          <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a class="active" href="#portfolio">Portfolio</a>
+            </nav>
+            </div>
+        </header>
+
+        <p><a href="#portfolio">← Go back to portfolio homepage</a></p>
+        <br>
+        <h1 class="subheader">UX Projects / Case Studies</h1>
+            <p>You may find all my UX work in this page.</p>
+
+        <hr> <br>
+        <div class="case-study-container">
+          <!-- Case Study 1 -->
+          <div class="case-study">
+            <img src="resources/Freshflow.png" alt="Case Study 1" />
+            <p>Reducing Food Waste Through Smart Inventory and Meal Management</p>
+            <span class="year">Academic | 2024</span>
+            <p><a target="_blank" href="https://michelletayct.wixsite.com/freshflow">Read more</a></p>
+          </div>
+      
+          <!-- Case Study 2 -->
+          <div class="case-study">
+            <img src="resources/petzy.png" alt="Case Study 2" />
+            <p>Connecting Pet Owners and Sitters for Seamless Pet Care Solutions</p>
+            <span class="year">Academic | 2024</span>
+            <p><a target="_blank" href="https://michelletayct.wixsite.com/petzy">Read more</a></p>
+          </div>
+      
+          <!-- Case Study 3 -->
+          <div class="case-study">
+            <img src="resources/GENAI (1).png" alt="Case Study 3" />
+            <p>Designing a Usage Metrics Dashboard for ChatGPT</p>
+            <span class="year">Academic | 2024</span>
+            <p><a target="_blank" href="https://michelletayct.wixsite.com/genai-dashboard">Read more</a></p>
+          </div>
+        </div> <br><br>
+        
+
+        <div class="case-study-container">
+          <!-- Case Study 4 -->
+          <div class="case-study">
+            <img src="resources/Glowhub.png" alt="Case Study 4" />
+            <p>Simplifying Skincare Decisions</p>
+            <span class="year">Academic | 2024</span>
+            <p><a target="_blank" href="https://nuscs3240group6.wixsite.com/glowhub">Read more</a></p>
+          </div>
+          </div>
+
+        <p><center><a href="#uxportfolio">Click to go Back to Top</a></center></p>
+<hr>
+
+      </section>
+
+      <section id="visualdesign">
+
+        <header>
+          <div class="brand">
+            <img src="resources/BrandLogo.png" alt="Icon" class="icon">
+            <h1 class="icontitle" style="color: #ab5fbe;">Michelle Tay</h1>
+        </div>
+          <div>
+          <nav>
+            <a href="#home">Home</a>
+            <a  href="#about">About</a>
+            <a class="active" href="#portfolio">Portfolio</a>
+            </nav>
+            </div>
+        </header>
+
+        <a href="#portfolio">← Go back to portfolio homepage</a>
+        <br><br>
+      
+        <h1 class="subheader">Design</h1>
+            <p>You may find all my design works in this page.  Adobe platforms and Canva were used in the process.</p>
+
+        <hr>
+
+        <b class="standout">Personal Brand Style Guide&nbsp;&nbsp;</b>
+            <small>[Apr 2024]</small> <br><br>
+            
+            <p class="standout"><center><a target="_blank" href="https://drive.google.com/file/d/1kPGWLkoCfMzc4ZvfBBVVKpAReM-ia9go/view?usp=drive_link">View file here if below fails to load</a></center></p>
+            
+            <div style="position: relative; width: 100%; height: 0; padding-top: 70.7526%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGNtnYNtVc&#x2F;vGNQt4RMEesYNVIW9mrYCw&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+
+<p>
+  This is a 12-paged brand style guide that I had created for my final project for a module titled 'Principles of Visual Communication' in November 2023. I designed my very own icon, selected a set of colours that best represents my identity, created a business card and a creative resume!  (Fun fact: I love cats!) 
+</p>
+
+<p class="tools"><i>Tools Used: Adobe Illustrator, Photoshop, Indesign, ProCreate</i></p>
+
+            <hr> 
+            <b class="standout">Universe Infographic &nbsp;&nbsp;</b>
+            <small>[Oct 2023]</small> <br>
+
+            <p class="standout"><center><a target="_blank" href="https://drive.google.com/file/d/1akxveDXW4V1-_lHisqCM55etMPmsU-RK/view?usp=drive_link">View final ver. file here if below fails to load</a></center></p>
+            
+            <div class="imagecontainer">
+              <figure>
+                <img src="resources/universeinfographicdraft.png">
+                <figcaption><center>Draft</center></figcaption>
+              </figure>
+              <figure>
+                <img src="resources/universeinfographicfinal.png">
+                <figcaption><center>Final Version</center></figcaption>
+              </figure>
+            </div> 
+
+       
+            <p>I designed an infographic about the universe, showcasing scientific data on planets, their distances from the sun, and other celestial objects like asteroids and comets. Inspired by my childhood fascination with space, this infographic aims to educate and engage viewers with fun and visually compelling facts about celestial bodies. This was done in October 2023,  as an assignment for the module 'Principles of Visual Communication'.</p>
+            <p class="tools"><i>Tools Used: Illustrator</i></p>
+              
+        <hr>
+
+        <b class="standout">Object Abstraction Using an Electric Guitar &nbsp;&nbsp;</b>
+        <small>[Sep 2023]</small> <br>
+       
+          
+          <p class="standout"><center><a target="_blank" href="https://drive.google.com/file/d/1vGejlLB9hLDfoF8QSxjaDtLcNwn6hQ36/view?usp=drive_link">View File</a></center></p>
+
+          <figure>
+            <center><img src="resources/guitarabstraction.png" ></center>
+            <figcaption><center>Visual Abstraction of Guitar</center></figcaption>
+          </figure> 
+
+          <p>This is an assignment for a module titled 'Principles of Visual Communication', where I had to present a visual abstraction of any object and reduce its complexity through four stages. I had chosen a friend's custom designed electric guitar for this task.</p>
+          <p class="tools"><i>Tools Used: Illustrator</i></p>
+          <hr>
 
 
+       
+          <b><span class="standout">Sustainability Poster</span> &nbsp;&nbsp;</b>
+          <small>[May - Dec 2023]</small>
+            
+          <figure>
+              <center><img src="resources/univers.png" width="220" height="380"></a></center>
+              <center><figcaption>(Formerly Envision Digital) Univers Poster</figcaption></center><br>
+          </figure>
+              <p>
+                Formerly Envision Digital, the organization has now rebranded as Univers. I designed this poster for an event booth during my internship at Univers.
+              </p>
+            
+              <p class="tools"><i>Tools: Canva</i></p>
+              <hr>
+
+              <b class="standout">Planet X Poster &nbsp;&nbsp;</b>
+              <small>[Jan 2023]</small> <br><br>
+              <p>
+                I attended a 2-day Adobe Photoshop Workshop held by Acadia Training. At the end of the training, a photoshop competition was held and I managed to win 2nd place. The details of the competition was to design a futuristic city of a fictional place called 'X'.
+                </p>
+                <p class="tools"><i>Tools Used: Adobe Photoshop</i></p>
+                <p class="standout"><center><a href="#about">View File</a></center></p>
+                <figure>
+                  <center><img src="resources/photoshop.jpg" width="400" height="800"></center>
+                  <figcaption><center>Preview of Poster</center></figcaption>
+                </figure> <hr>
+      
+          <b class="standout">Portrait Drawings &nbsp;&nbsp;</b>
+        <small>[2016-2017]</small> <br><br>
+        <p>I used to draw animated/manga characters in my free time, I've recently recreated them digitally.</p>
+        <p class="tools"><i>Tools Used: ProCreate</i></p>
+          
+          <p class="standout"><center><a href="#about">View Files</a></center></p>
+         
+          <p> --- to insert images here ---</p>
+      </div>
+      <br>
+      <p><center><a href="#visualdesign">Click to go Back to Top</a></center></p>
+      <hr>
+      </section>
 
 
+      <section id="writing">
 
+        <header>
+          <div class="brand">
+            <img src="resources/BrandLogo.png" alt="Icon" class="icon">
+            <h1 class="icontitle" style="color: #ab5fbe;">Michelle Tay</h1>
+        </div>
+          <div>
+          <nav>
+            <a href="#home">Home</a>
+            <a  href="#about">About</a>
+            <a class="active" href="#portfolio">Portfolio</a>
+            </nav>
+            </div>
+        </header>
 
+      <p class="breadcrumb" ><a href="#portfolio">← Go back to portfolio homepage</a></p>
+        <br><br>
+        <h1 class="subheader">Writing</h1>
+        <p>Explore a range of my written work from blog articles and e-books to marketing materials, showcasing my skills in storytelling, research, and clear communication.
 
-<!--FOOTER-->
-        <section class="footerblock">
-            <p >Thank you for visiting this portfolio website.<br>Created and Designed with 💜 by Michelle Tay</p> 
-        </section>
+        </p>
+        <hr>
 
+        <b class="standout">E-book: Exploring the Impact of Artificial Intelligence in Music &nbsp;&nbsp;</b>
+        <small>[Nov 2023]</small> <br><br>
+        <p>
 
+A 20-page e-book I designed and authored for the 'Artificial Intelligence and Society' module. It examines AI's transformative impact on the music industry, explores societal and ethical challenges, and offers insights into current affairs, challenges, opportunities, and potential solutions.
+        </p>
+        <p class="tools"><i>Tools Used: Canva</i></p>
+        <p class="standout"><center><a target="_blank" href="https://www.canva.com/design/DAGBWYiupWY/RhQ31MPFP5wKSaZbnm5mxg/view?utm_content=DAGBWYiupWY&utm_campaign=designshare&utm_medium=link&utm_source=editor">Read the book here</a></center></p>
+          <div class="imagecontainer">
+            <figure>
+              <img src="resources/ebookCover page.png">
+              <figcaption><center>Page 1 of 20 [Preview]</center></figcaption>
+            </figure>
+            <figure>
+              <img src="resources/ebookContent.png">
+              <figcaption><center>Page 2 of 20 [Preview]</center></figcaption>
+            </figure>
+          </div>  
+            <hr>
+            <b class="standout">Sustainability Marketing Collateral</b>
+            <small>[May - Nov 2023]</small>
+            <div class="works-container">
+              <!-- Work 1 -->
+  
+                <figure>
+                  <center>
+                    <p><a target="_blank" href="https://drive.google.com/file/d/1HGvPLDwn24tbWIbayNBR2DiBlNoJWY4P/view?usp=sharing">View file</a></p>
+                    <img src="resources/greenport.png" width="220" height="380">
+                  </center>
+                  <figcaption><center>Campaign brochure cover page [Preview]</center></figcaption>
+                </figure>
+           
+            
+              <!-- Work 2 -->
+                <figure>
+                  <center>
+                    <p><a target="_blank" href="https://drive.google.com/file/d/2HGvPLDwn24tbWIbayNBR2DiBlNoJWY4Q/view?usp=sharing">View file</a></p>
+                    <img src="resources/smrtcasestudy.png" width="220" height="380">
+                  </center>
+                  <figcaption><center>1-Pager case study [Preview]</center></figcaption>
+                </figure>
+                </div>
+      
+
+            <p>
+              During my Marketing Operations internship with Univers from May to November 2023, one of my key responsibilities was adapting and simplifying technical materials into clear, engaging marketing content.
+            </p>
+            <p class="tools"><i>Tools: Canva</i></p>
+            <!--
+            <b class="standout">Sustainability Campaign Brochure &nbsp;&nbsp;</b>
+          
+            <figure>  
+            <center><p><a target="_blank" href="https://drive.google.com/file/d/1HGvPLDwn24tbWIbayNBR2DiBlNoJWY4P/view?usp=sharing">View file</a></p></center>
+            <center><img src="resources/greenport.png" width="220" height="380"></a></center>
+            <figcaption><center>Campaign brochure cover page [Preview]</center></figcaption></figure>
+  
+          <p>
+            During my internship with Univers from May to November 2023, I developed a seven-page brochure for their Green Ports Campaign. My role involved crafting the brochure content by adapting and simplifying technical materials into clear and engaging text.
+          </p>
+          <p class="tools"><i>Tools: Canva</i></p> -->
+
+            <hr>
+            <b class="standout">Articles</b> <br><br>
+
+            <p>
+              I have written a couple of articles, which are available on my Medium profile. My writing covers topics such as student life, mental health, technology, and my academic work</p><br>
+            <p><center>Visit <a target="_blank" href="https://medium.com/@michelletay1810">my Medium profile</a> to view them directly.</center></p>
+            <br> 
+
+            <div class="case-study-container">
+              <!-- Article 1 -->
+              <div class="case-study">
+                <img src="resources/taylorswift.webp" alt="article-1" />
+                <p>Media Analysis on Taylor Swift's Blank Space MV</p>
+                <span class="year">Academic | 2024</span>
+                <p><a target="_blank" href="https://medium.com/@michelletay1810/media-analysis-on-taylor-swifts-blank-space-music-video-april-2024-4c01d3a7d2c7">Read more</a></p>
+              </div>
+          
+              <!-- Article 2 -->
+              <div class="case-study">
+                <img src="resources/changecourse.avif" alt="article-2" />
+                <p>Want to change Poly courses? Here's what you need to know!</p>
+                <span class="year">Student Life | 2024</span>
+                <p><a target="_blank" href="https://medium.com/@michelletay1810/want-to-change-poly-courses-heres-what-you-need-to-know-september-2023-176fae9bf714">Read more</a></p>
+              </div>
+          
+              <!-- Article 3 -->
+              <div class="case-study">
+                <img src="resources/uni.webp" alt="article-3" />
+                <p>Which university should I apply to?</p>
+                <span class="year">Student Life | 2024</span>
+                <p><a target="_blank" href="https://medium.com/@michelletay1810/which-university-should-i-apply-to-septemb-699db5f57a01">Read more</a></p>
+              </div>
+              
+            </div>
+
+            <br><br>
+
+            
+
+            <div class="case-study-container">
+              <!-- Article 4 -->
+              <div class="case-study">
+                <img src="resources/moneysave.webp" alt="article-4" />
+                <p>How To Save Money As A Student In Singapore</p>
+                <span class="year">Student Life | 2021</span>
+                <p><a target="_blank" href="https://medium.com/@michelletay1810/how-to-save-money-as-a-student-in-singapore-12-tips-you-need-to-know-e51c3613e51e">Read more</a></p>
+              </div>
+          
+              <!-- Article 5 -->
+              <div class="case-study">
+                <img src="resources/ml.webp" alt="article-5" />
+                <p>Machine Learning vs Deep Learning</p>
+                <span class="year">Tech | 2024</span>
+                <p><a target="_blank" href="https://medium.com/@michelletay1810/machine-learning-vs-deep-learning-fbef9bbc41b5">Read more</a></p>
+              </div>
+          
+              <!-- Article 6 -->
+              <div class="case-study">
+                <img src="resources/bully1.webp" alt="article-6" />
+                <p>Cyberbullying — Effects, Prevention & Solutions</p>
+                <span class="year">Mental Health | 2021</span>
+                <p><a target="_blank" href="https://medium.com/@michelletay1810/cyberbullying-effects-prevention-and-how-to-deal-with-it-95eeb2669465">Read more</a></p>
+              </div>
+              
+            </div>
+
+            <br><br>
+
+            <div class="case-study-container">
+              <!-- Article 7 -->
+              <div class="case-study">
+                <img src="resources/bully2.webp" alt="article-7" />
+                <p>Cyberbullying — Don’t Be A Bystander</p>
+                <span class="year">Mental Health | 2021</span>
+                <p><a target="_blank" href="https://medium.com/@michelletay1810/cyberbullying-dont-be-a-bystander-aug-2023-2c9e2de85c63">Read more</a></p>
+              </div>
+          
+              <!-- Article 8 -->
+              <div class="case-study">
+                <img src="resources/aceproject.webp" alt="article-8" />
+                <p>15 Essential Tips to Ace Group Projects</p>
+                <span class="year">Student Life | 2021</span>
+                <p><a target="_blank" href="https://medium.com/@michelletay1810/15-essential-tips-to-ace-group-projects-aug-2023-72818035755b">Read more</a></p>
+              </div>
+          
+              <!-- Article 9 -->
+              <div class="case-study">
+                <img src="resources/TP.webp" alt="artile-9" />
+                <p>Polytechnic Do’s & Don’ts to Give Freshmen an Edge</p>
+                <span class="year">Student Life | 2021</span>
+                <p><a target="_blank" href="https://medium.com/@michelletay1810/polytechnic-dos-don-ts-to-give-freshmen-an-edge-aug-2023-8bc5e1cb077b">Read more</a></p>
+              </div>
+              
+            </div>
+            <br>           
+      
+        <p><center><a href="#writing">Click to go Back to Top</a></center></p>
+        <hr>
+
+      
+      </section>
+
+      <section id="interactivemedia">
+
+        <header>
+          <div class="brand">
+            <img src="resources/BrandLogo.png" alt="Icon" class="icon">
+            <h1 class="icontitle" style="color: #ab5fbe;">Michelle Tay</h1>
+        </div>
+          <div>
+          <nav>
+            <a href="#home">Home</a>
+            <a  href="#about">About</a>
+            <a class="active" href="#portfolio">Portfolio</a>
+            </nav>
+            </div>
+        </header>
+
+      <a href="#portfolio">← Go back to portfolio homepage</a>
+        <br><br>
+        <h1 class="subheader">Interactive Media</h1> 
+        <p>Browse through my work in creating digital experiences, from computer games and interactive data stories to innovative applications. These projects demonstrate my skills in game design, programming, and data visualisation, blending creativity with technical expertise to craft meaningful interactions.</p> <hr>
+
+        <b class="standout">Computer Game — Luna's Call</b> 
+        <small>[2024]</small>
+
+        <figure>
+          <video width="70%" style="margin:auto" controls loading="lazy">
+            <source src="resources/Luna's Call Teaser FINAL.mov" type="video/mp4">
+            </video>
+            <center><figcaption>Game Teaser Video</figcaption></center>
+            <center><a href="https://gx.games/games/gwt1cm/luna-s-call/" target="_blank">Play the game</a></center>
+          </figure>
+          
+          <p>The above features a teaser of a single-player adventure game developed collaboratively with three other students as part of a Game Design module during my third year of undergraduate studies. As the game designer, I led the conceptualisation and ideation process, shaping the game's vision and mechanics. The game was created using GameMaker Studio 2.</p>
+          <p class="tools"><i>Tools Used: GameMaker Studio 2</i></p>
+          
+ 
+        <hr>
+        <b class="standout">HTML Mini Game — Block Jumper</b> 
+        <small>[2024]</small>
+
+        <figure>
+           
+            
+            <center><img src="resources/blockjumper.png" width="450" height="300"></center><br>
+            <center><p>
+              <a href="https://michelle-tay.github.io/game1-blockjumper.github.io/" target="_blank">Play the game</a> &nbsp;&nbsp; | &nbsp;&nbsp; <a href="https://github.com/michelle-tay/game1-blockjumper.github.io" target="_blank">Repository</a>
+            </p></center><br>
+    
+            <p>
+              This is the first simple mini-game I developed. I followed a <a target="_blank" href="https://www.youtube.com/watch?v=bG2BmmYr9NQ">YouTube tutorial</a>&nbsp; to build a basic game where the user jumps over a moving block and restarts after failing.
+            </p>
+
+            <br>
+            <p>I've enhanced the game with the following features:</p>
+
+            <ul>
+              <li>Displaying game instructions at the top and credits at the bottom.</li>
+              <li>Adding game music, composed by a friend and I.</li>
+              <li>Including a 'Start Game' button for users to begin at their discretion.</li>
+              <li>Allowing users to change the jumper character's color (shown in white in the screenshot).</li>
+              <li>Displaying a score counter for every successful jump.</li>
+              <li>Adding a background to enhance the game experience.</li>
+            </ul>
+          </figure>
+
+          <hr>
+
+          <b class="standout">Data Story — Social Media Impact & Effects</b> 
+          <small>[2023]</small>
+          <figure>
+            <video width="70%" style="margin:auto" controls loading="lazy">
+              <source src="resources/nm2207projpreview.MP4" type="video/mp4">
+              </video> 
+            <center><figcaption>Data story site preview</figcaption></center>
+              <br>
+              <center><p><a href="https://taychingtingmichelle-nm2207.github.io/" target="_blank">Visit website</a> &nbsp;&nbsp; | &nbsp;&nbsp; <a href="https://github.com/taychingtingmichelle-nm2207/taychingtingmichelle-nm2207.github.io" target="_blank">Repository</a>
+            </p></center>
+    
+            <p>
+              Social media has revolutionized communication, connection, and information consumption. This Data Story, created as a final project for the 'Computational Media Literacy' module, provides a perspective on the current usage and impact of social media. By extracting and transforming data from multiple sources in Excel, I effectively presented key insights through specific charts.
+            </p>
+          </figure>
+
+          <hr>
+       
+          <b class="standout">Computer-aided diagnosis system of Diabetic Retinopathy</b> 
+          <small>[2020]</small>
+
+          <figure>
+            <video width="70%" style="margin:auto" controls loading="lazy">
+              <source src="resources/drguidemo.mp4" type="video/mp4">
+              </video>
+              <center><figcaption>Demo Preview</figcaption></center>
+            <br>
+            <p>
+              This is my final year project while I was pursuing my Diploma in Biomedical Engineering. The project focuses on developing a computer-aided diagnosis system for diabetic retinopathy. My team and I utilized deep learning techniques, specifically transfer learning with the VGG16 convolutional neural network model. We successfully created a graphical user interface (GUI) using Tkinter that diagnoses scanned retina images, predicting whether the retina is at stage 0 or stage 1 in condition severity. The objective of this system is also to provide doctors a second opinion on diagnosis.
+            </p> 
+            <p> Our project also won a <a target="_blank" href="https://drive.google.com/file/d/1my0LaMwnco0EpJYG_tyWMZAgi_62e4hp/view?usp=sharing">commendation award.</a></p>
+            
+            </figure>
+
+            <p class="tools"><i>Tools Used: Jupyter Notebook</i></p>
+       
+
+      <p><center><a href="#interactivemedia">Click to go Back to Top</a></center></p>
+      <hr>
+        
+      </section>
+
+      
+      
     </main>
-
-    <header>
-      <p class="leftmarginedd"><b>MICHELLE TAY</b></p>
-      <nav>
-          <ul>
-              <li class="navtexts"><a href="#home">HOME</a></li>
-              <li class="navtexts"><a href="#aboutme">ABOUT</a></li>
-              <li class="navtexts"><a href="#skills">SKILLS</a></li>
-              <li class="navtexts"><a href="#work">WORK</a></li>
-              <li class="navtexts"><a href="#contact">CONTACT</a></li>
-              <li class="navtexts"><a href="#achievements">ACHIEVEMENTS</a></li>
-          </ul>
-      </nav>
-  </header>
-
-
-</body>
+    
+   
+    
+  </body>
 </html>
