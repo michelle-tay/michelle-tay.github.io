@@ -617,6 +617,19 @@ article time {
   height: auto; /* Maintains the aspect ratio */
 }
 
+.imagecontainer3{
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Creates two equal columns */
+    gap: 20px; /* Adds space between the images */
+    padding-top: 0; /* Adds padding around the container */
+    /*background-color: #e89efa;*/
+}
+
+.imagecontainer3 img {
+  width: 100%; /* Ensures images take up the full width of their container */
+  height: auto; /* Maintains the aspect ratio */
+}
+
 
 /* Section styling */
 #medium-articles {
