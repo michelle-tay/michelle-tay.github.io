@@ -8,6 +8,18 @@
 
 }
 
+.hidden {
+  display: none !important; /* Ensure it overrides other display settings */
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
 @media (prefers-color-scheme: dark) {
   * {
     --textcolor: #6c6c6c;
@@ -47,12 +59,25 @@ body {
   .article {
     width: 45%; /* Adjusts to two articles per row on smaller screens */
   }
+
+  .icon {
+    display: none;
+  }
+
+  .icontitle{
+    display:none;
+  }
+
+  nav a {
+    font-size: 14px;  /* Smaller font size for mobile devices */
+  }
 }
 
 
 h1, h2, h3 {
   margin-top: 2em; /* Default spacing */
 }
+
 
 
 section {
@@ -67,12 +92,12 @@ section {
   background: var(--bgcolor);
   max-width: 1200px;
   margin: 0 auto;
+
 }
 
 section:target { /* Show section */
   display: block;
 }
-
 section#home { /* Show #home by default */
   display: block;
 }
@@ -123,6 +148,7 @@ a:hover {
 nav {
   display: flex; /* Use Flexbox for horizontal alignment */
   gap: 20px; /* Add spacing between navigation links */
+  text-align: center;
 }
 
 nav a {
@@ -792,6 +818,18 @@ article time {
     width: 100%; /* Each card takes full width on smaller screens */
     grid-template-columns: 1fr; /* 1 column for small screens */
   }
+  .icon {
+    display: none;
+  }
+
+  .icontitle{
+    display:none;
+  }
+
+  nav a {
+    font-size: 14px;  /* Smaller font size for mobile devices */
+
+  }
 }
 
 .music-player {
@@ -878,6 +916,7 @@ article time {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Default two columns */
   gap: 20px; /* Space between grid items */
+  z-index: 1;
 }
 
 .cta-box {
@@ -965,6 +1004,19 @@ article time {
     font-size: 0.9rem;
     padding: 8px;
   }
+  .icon {
+    display: none;
+  }
+
+  .icontitle{
+    display:none;
+  }
+
+  nav a {
+    font-size: 14px;  /* Smaller font size for mobile devices */
+  }
+
+  
 }
 
 .breadcrumb {
