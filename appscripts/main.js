@@ -45,3 +45,33 @@ document.addEventListener("DOMContentLoaded", () => {
     hideMusicPlayerOnMobile();
     window.addEventListener("resize", hideMusicPlayerOnMobile);
   });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const navHeight = 70; // Adjust this value based on the height of your navigation bar
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            let target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  hamburger.addEventListener('click', () => {
+      navLinks.style.display = navLinks.style.display === 'block' ? 'none' : 'block';
+  });
+});
+
+
